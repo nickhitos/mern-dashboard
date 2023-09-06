@@ -76,7 +76,7 @@ function App() {
 			// Save user to MongoDB
 			if (profileObj) {
 				const response = await fetch(
-					"http://localhost:8080/api/v1/users",
+					"https://mern-dashboard-qj07.onrender.com/api/v1/users",
 					{
 						method: "POST",
 						headers: { "Content-Type": "application/json" },
@@ -177,7 +177,7 @@ function App() {
 					<RefineSnackbarProvider>
 						<Refine
 							dataProvider={dataProvider(
-								"http://localhost:8080/api/v1"
+								"https://mern-dashboard-qj07.onrender.com/api/v1"
 							)}
 							notificationProvider={notificationProvider}
 							routerProvider={routerBindings}
