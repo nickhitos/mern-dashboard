@@ -167,7 +167,6 @@ function App() {
 
 	return (
 		<BrowserRouter>
-			<GitHubBanner />
 			<RefineKbarProvider>
 				<ColorModeContextProvider>
 					<CssBaseline />
