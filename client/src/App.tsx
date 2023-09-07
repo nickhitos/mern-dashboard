@@ -180,7 +180,7 @@ function App() {
 							)}
 							notificationProvider={notificationProvider}
 							routerProvider={routerBindings}
-							authProvider={authProvider}
+							// authProvider={authProvider}
 							resources={[
 								{
 									name: "dashboard",
