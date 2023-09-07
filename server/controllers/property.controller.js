@@ -76,7 +76,6 @@ const createProperty = async (req, res) => {
 		const session = await mongoose.startSession();
 		session.startTransaction();
 
-		email = "nickh@gmail.com"; // FIXME: If using auth, remove this line
 		const user = await User.findOne({ email }).session(session);
 
 		if (!user) throw new Error("User not found");
