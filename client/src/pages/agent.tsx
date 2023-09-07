@@ -23,7 +23,6 @@ const Agent = () => {
 					display: "flex",
 					flexWrap: "wrap",
 					gap: "20px",
-					backgroundColor: "#fcfcfc",
 				}}
 			>
 				{allAgents.map((agent) => (

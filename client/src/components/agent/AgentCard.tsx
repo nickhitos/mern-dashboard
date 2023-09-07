@@ -42,6 +42,8 @@ const AgentCard = ({
 				flexDirection: { xs: "column", sm: "row" },
 				gap: "20px",
 				padding: "20px",
+				backgroundColor: "#fcfcfc",
+				borderRadius: "15px",
 				"&:hover": {
 					boxShadow: "0 22px 45px 2px rgba(176, 176, 176, 0.1)",
 				},

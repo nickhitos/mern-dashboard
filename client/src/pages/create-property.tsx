@@ -32,7 +32,7 @@ const CreateProperty = () => {
 		await onFinish({
 			...data,
 			photo: propertyImage.url,
-			// TODO: Uncomment 
+			// TODO: Uncomment if using auth
 			// email: user?.email,
 			email: "nickh@gmail.com",
 		});

@@ -180,6 +180,7 @@ function App() {
 							)}
 							notificationProvider={notificationProvider}
 							routerProvider={routerBindings}
+							// TODO: Uncomment to enable auth
 							// authProvider={authProvider}
 							resources={[
 								{
