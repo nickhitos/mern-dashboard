@@ -78,7 +78,17 @@ const createProperty = async (req, res) => {
 
 		const user = await User.findOne({ email }).session(session);
 
-		if (!user) throw new Error("User not found");
+		// FIXME: Uncomment when auth is enabled
+		// if (!user) throw new Error("User not found");
+
+		// FIXME: Comment out when auth is enabled
+		if (!user)
+			user = {
+				name: "Nicolas Hitosis",
+				email: "nickh@gmail.com",
+				avatar: "https://media.licdn.com/dms/image/D5603AQErxfNX-cLmdg/profile-displayphoto-shrink_800_800/0/1687031909168?e=1699488000&v=beta&t=fsy-gGFpYyEqnRcJicZ01GrC7EX8Mw5ZODYXM0ctYtg",
+				allProperties: [],
+			};
 
 		const photoUrl = await cloudinary.uploader.upload(photo);
 		const newProperty = await Property.create({
