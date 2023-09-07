@@ -76,19 +76,10 @@ const createProperty = async (req, res) => {
 		const session = await mongoose.startSession();
 		session.startTransaction();
 
+		email = "nickh@gmail.com"; // FIXME: If using auth, remove this line
 		const user = await User.findOne({ email }).session(session);
 
-		// FIXME: Uncomment when auth is enabled
-		// if (!user) throw new Error("User not found");
-
-		// FIXME: Comment out when auth is enabled
-		if (!user)
-			user = {
-				name: "Nicolas Hitosis",
-				email: "nickh@gmail.com",
-				avatar: "https://media.licdn.com/dms/image/D5603AQErxfNX-cLmdg/profile-displayphoto-shrink_800_800/0/1687031909168?e=1699488000&v=beta&t=fsy-gGFpYyEqnRcJicZ01GrC7EX8Mw5ZODYXM0ctYtg",
-				allProperties: [],
-			};
+		if (!user) throw new Error("User not found");
 
 		const photoUrl = await cloudinary.uploader.upload(photo);
 		const newProperty = await Property.create({
