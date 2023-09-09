@@ -16,7 +16,7 @@ const Home = () => {
 	});
   const latestProperties = data?.data ?? [];
 
-  if (isLoading) return <Typography>Loading...</Typography>
+  if (isLoading) return <Typography>Loading... (This will initially take a few minutes)</Typography>
   if (isError) return <Typography>There was an error...</Typography>
 
 	return (
