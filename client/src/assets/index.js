@@ -1,7 +1,7 @@
 import logo from './logo.svg';
-import yariga from './yariga.svg';
+import vista from './yariga.svg';
 
 export {
   logo,
-  yariga,
+  vista,
 };

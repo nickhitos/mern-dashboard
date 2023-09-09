@@ -5,9 +5,9 @@ import SvgIcon from "@mui/material/SvgIcon";
 import Typography from "@mui/material/Typography";
 import type { RefineLayoutThemedTitleProps } from "@refinedev/mui";
 
-const yarigaText = "Yariga";
+const titleText = "Vista";
 
-const yarigaIcon = (
+const vistaIcon = (
 	<svg
 		width="39"
 		height="35"
@@ -25,8 +25,8 @@ const yarigaIcon = (
 export const ThemedTitleV2: React.FC<RefineLayoutThemedTitleProps> = ({
 	collapsed,
 	wrapperStyles,
-	icon = yarigaIcon,
-	text = yarigaText,
+	icon = vistaIcon,
+	text = titleText,
 }) => {
 	const routerType = useRouterType();
 	const Link = useLink();

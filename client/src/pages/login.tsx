@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import { yariga } from '../assets';
+import { vista } from '../assets';
 import { CredentialResponse } from "../interfaces/google";
 
 export const Login: React.FC = () => {
@@ -58,7 +58,7 @@ export const Login: React.FC = () => {
         alignItems= "center"
       >
         <div>
-          <img src={yariga} alt="Yariga Logo" />
+          <img src={vista} alt="Logo" />
         </div>
 
         <GoogleButton />
