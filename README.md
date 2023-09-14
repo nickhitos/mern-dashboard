@@ -18,4 +18,4 @@ Vista is a real estate admin dashboard designed to streamline and enhance the ma
 
 ## Credits
 
-[JSMastery](https://www.jsmastery.pro) for the resources, guidance, and [design]([https://www.jsmastery.pro](https://www.figma.com/file/QLU3mZJOsmnAN4SEQ8YSTA/Real-Estate-Admin-Dashboard?type=design&node-id=143-937&mode=design)https://www.figma.com/file/QLU3mZJOsmnAN4SEQ8YSTA/Real-Estate-Admin-Dashboard?type=design&node-id=143-937&mode=design).
+[JSMastery](https://www.jsmastery.pro) for the resources, guidance, and design.
